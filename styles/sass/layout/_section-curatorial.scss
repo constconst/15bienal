@@ -1,0 +1,15 @@
+.section-curatorial {
+    border-bottom: $main-line;
+    padding: 5% 0;
+    &__text {
+        color: $brand-color;
+        font-size: 24px;
+        line-height: 145%;
+        text-align: center;
+    }
+    &__link {
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+    }
+}

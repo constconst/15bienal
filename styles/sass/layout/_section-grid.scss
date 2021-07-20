@@ -1,0 +1,37 @@
+.section-grid {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    &__square-grid {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: $main-line;
+        border-bottom: $main-line;
+    }
+    &__square-grid>* {
+        flex: 1;
+        min-height: 300px;
+        width: 25%;
+        min-width: 25%;
+        box-shadow: 1px 1px 0 $text-color;
+    }
+    & .square-grid-item {
+        padding: 20px;
+        &__title {
+            &__flex {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+            }
+            h5 {
+                color: $brand-color;
+            }
+        }
+    }
+}
+
+div.red-line {
+    height: 2px;
+    width: 15px;
+    background-color: $brand-color;
+}

@@ -1,0 +1,28 @@
+.hero {
+    // Tamaños desktop porque no tengo el diseño del mobile
+    padding-top: calc(83px + 17px);
+    height: 100vh;
+    margin-bottom: 100px;
+    & .carousel {
+        height: 100vh;
+        border-bottom: $main-line;
+    }
+}
+
+.hero__fixed-item {
+    z-index: -2;
+    &__img {
+        max-width: 552px;
+        height: auto;
+        transform: translateX(-80px);
+        margin-top: 10px;
+    }
+}
+
+.carousel-item {
+    &__title {
+        font-size: $font-large;
+        line-height: 1.5;
+        text-decoration: underline solid black 4px;
+    }
+}

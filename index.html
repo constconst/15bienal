@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15ª Bienal</title>
+    <link rel="stylesheet" href="styles/sass/main.css">
+
+</head>
+
+<body>
+    <!-- HEADER.PHP -->
+    <header class="header">
+        <div class="container header__container-top">
+            <!-- Este texto debe poder ser cambiado -->
+            <span class="header__container-top__version">15ª versión</span>
+            <!-- Ticker es un texto que va rotando, el texto debe poder ser cambiado en un cpt -->
+            <span class="header__container-top__ticker hide-on-small-only">WS TICKER QUE ESTÁ ROTANDO INFORMACIÓN. SE PONE LA LETRA ROJA AL ACTIVAR UN EVENTO EN VIVO. </span>
+            <a href="" class="header__container-top__logo">
+                <p class="logo-text">
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.50311 10.6615C13.5291 10.6615 17 6.59971 17 5.33077C17 4.05562 13.5229 0 8.50311 0C3.54555 0 0 4.05562 0 5.33077C0 6.59971 3.53933 10.6615 8.50311 10.6615ZM8.50311 9.67874C4.40395 9.67874 1.08855 6.20783 1.08855 5.33077C1.08855 4.59056 4.40395 0.982803 8.50311 0.982803C12.5836 0.982803 15.9115 4.59056 15.9115 5.33077C15.9115 6.20783 12.5836 9.67874 8.50311 9.67874Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51829 8.57517C10.3773 8.57517 11.8842 7.06818 11.8842 5.20922C11.8842 3.35027 10.3773 1.84328 8.51829 1.84328C6.65933 1.84328 5.15234 3.35027 5.15234 5.20922C5.15234 7.06818 6.65933 8.57517 8.51829 8.57517Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51892 7.1906C9.62638 7.1906 10.5242 6.29283 10.5242 5.18536C10.5242 4.07789 9.62638 3.18011 8.51892 3.18011C7.41145 3.18011 6.51367 4.07789 6.51367 5.18536C6.51367 6.29283 7.41145 7.1906 8.51892 7.1906Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.52424 7.859C10.0009 7.859 11.1979 6.66197 11.1979 5.18535C11.1979 3.70872 10.0009 2.51169 8.52424 2.51169C7.04762 2.51169 5.85059 3.70872 5.85059 5.18535C5.85059 6.66197 7.04762 7.859 8.52424 7.859Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25075 1.92558L9.43605 1.97178L9.27435 2.62034L9.08904 2.57414L9.25075 1.92558ZM10.0093 2.18841L10.1779 2.27807L9.8641 2.86824L9.69548 2.77858L10.0093 2.18841ZM10.6858 2.66471L10.8209 2.79975L10.3482 3.27239L10.2132 3.13735L10.6858 2.66471ZM11.2239 3.20687L11.3307 3.3652L10.7766 3.73897L10.6698 3.58065L11.2239 3.20687ZM11.6117 3.90975L11.677 4.08921L11.0489 4.31781L10.9836 4.13835L11.6117 3.90975ZM11.7958 4.7164L11.8058 4.90712L11.1383 4.94209L11.1283 4.75138L11.7958 4.7164ZM9.25075 8.47514L9.43605 8.42895L9.27435 7.78038L9.08904 7.82658L9.25075 8.47514ZM10.0093 8.21231L10.1779 8.12266L9.8641 7.53249L9.69548 7.62214L10.0093 8.21231ZM10.6858 7.73602L10.8209 7.60098L10.3482 7.12833L10.2132 7.26337L10.6858 7.73602ZM11.2239 7.19385L11.3307 7.03552L10.7766 6.66175L10.6698 6.82008L11.2239 7.19385ZM11.6117 6.49098L11.677 6.31152L11.0489 6.08291L10.9836 6.26237L11.6117 6.49098ZM11.7958 5.68433L11.8058 5.49361L11.1383 5.45863L11.1283 5.64934L11.7958 5.68433ZM7.82456 1.92558L7.63926 1.97178L7.80097 2.62034L7.98627 2.57414L7.82456 1.92558ZM8.62051 1.84573H8.42954V2.51415H8.62051V1.84573ZM8.62051 7.86146H8.42954V8.52988H8.62051V7.86146ZM7.06604 2.18841L6.89742 2.27807L7.21122 2.86824L7.37984 2.77858L7.06604 2.18841ZM6.3895 2.66471L6.25446 2.79975L6.7271 3.27239L6.86214 3.13735L6.3895 2.66471ZM5.85142 3.20687L5.74462 3.3652L6.29877 3.73897L6.40556 3.58065L5.85142 3.20687ZM5.46359 3.90975L5.39827 4.08921L6.02637 4.31781L6.09169 4.13835L5.46359 3.90975ZM5.27953 4.7164L5.26953 4.90712L5.93703 4.94209L5.94702 4.75138L5.27953 4.7164ZM7.82456 8.47514L7.63926 8.42895L7.80097 7.78038L7.98627 7.82658L7.82456 8.47514ZM7.06604 8.21231L6.89742 8.12266L7.21122 7.53249L7.37984 7.62214L7.06604 8.21231ZM6.3895 7.73602L6.25446 7.60098L6.7271 7.12833L6.86214 7.26337L6.3895 7.73602ZM5.85142 7.19385L5.74462 7.03552L6.29877 6.66175L6.40556 6.82008L5.85142 7.19385ZM5.46359 6.49098L5.39827 6.31152L6.02637 6.08291L6.09169 6.26237L5.46359 6.49098ZM5.27953 5.68433L5.26953 5.49361L5.93703 5.45863L5.94702 5.64934L5.27953 5.68433Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.43019 2.54582H8.62117V3.21423H8.43019V2.54582ZM8.43019 7.12923H8.62117V7.79765H8.43019V7.12923ZM7.26177 2.83913L7.42717 2.74364L7.80912 3.4052L7.64372 3.50069L7.26177 2.83913ZM7.06142 3.90835L6.53439 3.42807L6.40661 3.56999L6.95127 4.05759L7.06142 3.90835ZM5.8457 4.63683L5.90472 4.4552L6.63123 4.69126L6.57222 4.87288L5.8457 4.63683ZM9.58256 2.73806L9.72752 2.8105L9.44582 3.40229L9.30086 3.32985L9.58256 2.73806ZM10.4725 3.42807L9.9852 3.87534L10.0956 4.02189L10.6003 3.56999L10.4725 3.42807ZM11.1022 4.4552L11.1612 4.63683L10.4347 4.87288L10.3756 4.69126L11.1022 4.4552ZM9.57972 7.5601L9.26357 6.98534L9.43287 6.91036L9.74511 7.46461L9.57972 7.5601ZM10.0029 6.44913L10.4725 6.87567L10.6003 6.73375L10.118 6.30342L10.0029 6.44913ZM11.1612 5.7624L11.1022 5.94404L10.3756 5.70797L10.4347 5.52635L11.1612 5.7624ZM7.42717 7.65559L7.26177 7.5601L7.64372 6.89854L7.80912 6.99403L7.42717 7.65559ZM6.40661 6.82924L6.53439 6.97116L7.10209 6.46001L6.9743 6.31808L6.40661 6.82924ZM5.90472 5.94404L5.8457 5.7624L6.57222 5.52635L6.63123 5.70797L5.90472 5.94404Z" fill="black"/>
+                        <path d="M8.50311 10.6615C13.5291 10.6615 17 6.59971 17 5.33077C17 4.05562 13.5229 0 8.50311 0C3.54555 0 0 4.05562 0 5.33077C0 6.59971 3.53933 10.6615 8.50311 10.6615ZM8.50311 9.67874C4.40395 9.67874 1.08855 6.20783 1.08855 5.33077C1.08855 4.59056 4.40395 0.982803 8.50311 0.982803C12.5836 0.982803 15.9115 4.59056 15.9115 5.33077C15.9115 6.20783 12.5836 9.67874 8.50311 9.67874Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51829 8.57517C10.3773 8.57517 11.8842 7.06818 11.8842 5.20922C11.8842 3.35027 10.3773 1.84328 8.51829 1.84328C6.65933 1.84328 5.15234 3.35027 5.15234 5.20922C5.15234 7.06818 6.65933 8.57517 8.51829 8.57517Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51892 7.1906C9.62638 7.1906 10.5242 6.29283 10.5242 5.18536C10.5242 4.07789 9.62638 3.18011 8.51892 3.18011C7.41145 3.18011 6.51367 4.07789 6.51367 5.18536C6.51367 6.29283 7.41145 7.1906 8.51892 7.1906Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.52424 7.859C10.0009 7.859 11.1979 6.66197 11.1979 5.18535C11.1979 3.70872 10.0009 2.51169 8.52424 2.51169C7.04762 2.51169 5.85059 3.70872 5.85059 5.18535C5.85059 6.66197 7.04762 7.859 8.52424 7.859Z" fill="black" stroke="black" stroke-width="0.5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25075 1.92558L9.43605 1.97178L9.27435 2.62034L9.08904 2.57414L9.25075 1.92558ZM10.0093 2.18841L10.1779 2.27807L9.8641 2.86824L9.69548 2.77858L10.0093 2.18841ZM10.6858 2.66471L10.8209 2.79975L10.3482 3.27239L10.2132 3.13735L10.6858 2.66471ZM11.2239 3.20687L11.3307 3.3652L10.7766 3.73897L10.6698 3.58065L11.2239 3.20687ZM11.6117 3.90975L11.677 4.08921L11.0489 4.31781L10.9836 4.13835L11.6117 3.90975ZM11.7958 4.7164L11.8058 4.90712L11.1383 4.94209L11.1283 4.75138L11.7958 4.7164ZM9.25075 8.47514L9.43605 8.42895L9.27435 7.78038L9.08904 7.82658L9.25075 8.47514ZM10.0093 8.21231L10.1779 8.12266L9.8641 7.53249L9.69548 7.62214L10.0093 8.21231ZM10.6858 7.73602L10.8209 7.60098L10.3482 7.12833L10.2132 7.26337L10.6858 7.73602ZM11.2239 7.19385L11.3307 7.03552L10.7766 6.66175L10.6698 6.82008L11.2239 7.19385ZM11.6117 6.49098L11.677 6.31152L11.0489 6.08291L10.9836 6.26237L11.6117 6.49098ZM11.7958 5.68433L11.8058 5.49361L11.1383 5.45863L11.1283 5.64934L11.7958 5.68433ZM7.82456 1.92558L7.63926 1.97178L7.80097 2.62034L7.98627 2.57414L7.82456 1.92558ZM8.62051 1.84573H8.42954V2.51415H8.62051V1.84573ZM8.62051 7.86146H8.42954V8.52988H8.62051V7.86146ZM7.06604 2.18841L6.89742 2.27807L7.21122 2.86824L7.37984 2.77858L7.06604 2.18841ZM6.3895 2.66471L6.25446 2.79975L6.7271 3.27239L6.86214 3.13735L6.3895 2.66471ZM5.85142 3.20687L5.74462 3.3652L6.29877 3.73897L6.40556 3.58065L5.85142 3.20687ZM5.46359 3.90975L5.39827 4.08921L6.02637 4.31781L6.09169 4.13835L5.46359 3.90975ZM5.27953 4.7164L5.26953 4.90712L5.93703 4.94209L5.94702 4.75138L5.27953 4.7164ZM7.82456 8.47514L7.63926 8.42895L7.80097 7.78038L7.98627 7.82658L7.82456 8.47514ZM7.06604 8.21231L6.89742 8.12266L7.21122 7.53249L7.37984 7.62214L7.06604 8.21231ZM6.3895 7.73602L6.25446 7.60098L6.7271 7.12833L6.86214 7.26337L6.3895 7.73602ZM5.85142 7.19385L5.74462 7.03552L6.29877 6.66175L6.40556 6.82008L5.85142 7.19385ZM5.46359 6.49098L5.39827 6.31152L6.02637 6.08291L6.09169 6.26237L5.46359 6.49098ZM5.27953 5.68433L5.26953 5.49361L5.93703 5.45863L5.94702 5.64934L5.27953 5.68433Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.43019 2.54582H8.62117V3.21423H8.43019V2.54582ZM8.43019 7.12923H8.62117V7.79765H8.43019V7.12923ZM7.26177 2.83913L7.42717 2.74364L7.80912 3.4052L7.64372 3.50069L7.26177 2.83913ZM7.06142 3.90835L6.53439 3.42807L6.40661 3.56999L6.95127 4.05759L7.06142 3.90835ZM5.8457 4.63683L5.90472 4.4552L6.63123 4.69126L6.57222 4.87288L5.8457 4.63683ZM9.58256 2.73806L9.72752 2.8105L9.44582 3.40229L9.30086 3.32985L9.58256 2.73806ZM10.4725 3.42807L9.9852 3.87534L10.0956 4.02189L10.6003 3.56999L10.4725 3.42807ZM11.1022 4.4552L11.1612 4.63683L10.4347 4.87288L10.3756 4.69126L11.1022 4.4552ZM9.57972 7.5601L9.26357 6.98534L9.43287 6.91036L9.74511 7.46461L9.57972 7.5601ZM10.0029 6.44913L10.4725 6.87567L10.6003 6.73375L10.118 6.30342L10.0029 6.44913ZM11.1612 5.7624L11.1022 5.94404L10.3756 5.70797L10.4347 5.52635L11.1612 5.7624ZM7.42717 7.65559L7.26177 7.5601L7.64372 6.89854L7.80912 6.99403L7.42717 7.65559ZM6.40661 6.82924L6.53439 6.97116L7.10209 6.46001L6.9743 6.31808L6.40661 6.82924ZM5.90472 5.94404L5.8457 5.7624L6.57222 5.52635L6.63123 5.70797L5.90472 5.94404Z" fill="black"/>
+                    </svg> cchv
+                </p>
+            </a>
+        </div>
+        <!-- Primer slider -->
+        <div class="container header__container-bottom">
+            <div class="header__container-bottom__left">
+                <!-- Eso debe poder ser autoadministrable -->
+                <h1>umbral</h1>
+                <p>Bienal de artes mediales de Santiago</p>
+            </div>
+            <div class="header__container-bottom__center  hide-on-small-only">
+                <form class="search-form">
+                    <div class="">
+                        <input type="text" placeholder="Ir" class="search-form__input">
+
+                        <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.6663 1L37.0265 8M37.0265 8L29.6663 15M37.0265 8H0.625977" stroke="black"/>
+                        </svg>
+
+                    </div>
+                </form>
+            </div>
+            <div class="header__container-bottom__right">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20.5" cy="20.5" r="20"  stroke="black"/>
+                    <rect x="12" y="17" width="2" height="17" transform="rotate(-90 12 17)" fill="black"/>
+                    <rect x="12" y="22" width="2" height="17" transform="rotate(-90 12 22)" fill="black"/>
+                    <rect x="12" y="27" width="2" height="17" transform="rotate(-90 12 27)" fill="black"/>
+                    </svg>
+            </div>
+
+        </div>
+    </header>
+    <!-- Sección Hero que contiene un carrusel de slides -->
+    <section class="hero">
+        <div class="hero__carousel carousel carousel-slider container">
+            <div class="hero__carousel__fixed-item">
+                <img class="hero__fixed-item__img" src="assets/main-image@2x.png" alt="">
+            </div>
+
+            <div class="carousel-item" href="#one!">
+                <div class="row">
+                    <div class="col m6 offset-m2">
+                        <span>Concierto</span>
+                        <h2 class="carousel-item__title">PULSUS UMBRAE: FIAT 600 & ModiFICA</h2>
+                    </div>
+                    <div class="col m4">
+                        <p class="">Música electrónica desarrollada e interpretada en vivo por F600 que interactúa con imágenes construidas y ejecutadas en sincronía con los sonidos por el artista visual Marcelo Fica y compuestas a partir de las piezas sonoras en
+                            formato abierto y sin parámetros racionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+                <div class="row">
+                    <div class="col m6 offset-m2">
+                        <span>Concierto</span>
+                        <h2 class="carousel-item__title">PULSUS UMBRAE: FIAT 600 & ModiFICA</h2>
+                    </div>
+                    <div class="col m4">
+                        <p class="carousel-item__paragraph">Música electrónica desarrollada e interpretada en vivo por F600 que interactúa con imágenes construidas y ejecutadas en sincronía con los sonidos por el artista visual Marcelo Fica y compuestas a partir de las piezas sonoras en
+                            formato abierto y sin parámetros racionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+                <div class="row">
+                    <div class="col m6 offset-m2">
+                        <span>Concierto</span>
+                        <h2 class="carousel-item__title">PULSUS UMBRAE: FIAT 600 & ModiFICA</h2>
+                    </div>
+                    <div class="col m4">
+                        <p class="">Música electrónica desarrollada e interpretada en vivo por F600 que interactúa con imágenes construidas y ejecutadas en sincronía con los sonidos por el artista visual Marcelo Fica y compuestas a partir de las piezas sonoras en
+                            formato abierto y sin parámetros racionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#four!">
+                <div class="row">
+                    <div class="col m6 offset-m2">
+                        <span>Concierto</span>
+                        <h2 class="carousel-item__title">PULSUS UMBRAE: FIAT 600 & ModiFICA</h2>
+                    </div>
+                    <div class="col m4">
+                        <h5 class="">Música electrónica desarrollada e interpretada en vivo por F600 que interactúa con imágenes construidas y ejecutadas en sincronía con los sonidos por el artista visual Marcelo Fica y compuestas a partir de las piezas sonoras en
+                            formato abierto y sin parámetros racionales.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de texto -->
+    <section class="section-curatorial container">
+        <div class="row">
+            <div class="col m8 s12 offset-m2">
+                <h4 class="section-curatorial__text">El 2020 se ha configurado como un año de transición planetaria; el 2021 como la constatación de que la normalidad se ha dislocado para dar paso a un nuevo ciclo de la humanidad en la Tierra. La distancia física aceleró la experiencia
+                    digital, radicalizando procesos pronosticados por las artes audiovisuales y la cibernética en el siglo pasado.</h4>
+                <!-- Link a la página curatorial -->
+                <a href="" class="section-curatorial__link">Ver texto completo <svg width="41" height="9" viewBox="0 0 41 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.95206C40.5488 4.7568 40.5488 4.44022 40.3536 4.24495L37.1716 1.06297C36.9763 0.867711 36.6597 0.867711 36.4645 1.06297C36.2692 1.25824 36.2692 1.57482 36.4645 1.77008L39.2929 4.59851L36.4645 7.42693C36.2692 7.6222 36.2692 7.93878 36.4645 8.13404C36.6597 8.3293 36.9763 8.3293 37.1716 8.13404L40.3536 4.95206ZM3.75452e-08 5.09851L40 5.09851L40 4.09851L-3.75452e-08 4.09851L3.75452e-08 5.09851Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section-grid">
+        <div class="container">
+            <h4>Participa en la Bienal</h4>
+            <p>Conoce nuestro programa de exposición y actividades.</p>
+        </div>
+        <div class="section-grid__square-grid">
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <div class="square-grid-item">
+                <div class="square-grid-item__title">
+                    <div class="square-grid-item__title__flex">
+                        <p>01</p>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
+                        </svg>
+
+                    </div>
+                    <h5>museos</h5>
+                    <div class="red-line"></div>
+                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
+                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Jquery min -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
