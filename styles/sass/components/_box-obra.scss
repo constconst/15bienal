@@ -1,0 +1,11 @@
+.box-obra {
+    display: flex;
+    flex-direction: column;
+    max-width: 386px;
+    &__img {
+        width: 386px;
+        height: 252px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

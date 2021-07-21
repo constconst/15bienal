@@ -1,3 +1,25 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button-filter {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 6px 20px;
+    border: $main-line;
+    cursor: pointer;
+    font-family: $text-font;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.button-filter.disabled {
+    border: $disabled-main-line;
+    color: $mid-grey;
+}
+
+.button-filter:hover {
+    color: $brand-color;
+    border: $hover-main-line;
+}

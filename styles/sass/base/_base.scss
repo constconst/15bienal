@@ -41,10 +41,14 @@ body {
 
 a {
     text-decoration: underline;
-    font-family: $text-font;
+    font-family: $secondary-text-font;
     text-transform: uppercase;
     color: $text-color;
     letter-spacing: 2px;
+}
+
+a:hover {
+    color: $brand-color;
 }
 
 h1,
