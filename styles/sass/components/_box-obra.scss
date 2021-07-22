@@ -1,6 +1,15 @@
 .flex-grid-thirds {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border-top: $main-line;
+    border-bottom: $main-line;
+    &__item {
+        padding: 45px;
+        border-right: $main-line;
+    }
+    &__item:last-child {
+        border-right: transparent;
+    }
 }
 
 .box-obra {

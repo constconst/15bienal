@@ -21,3 +21,18 @@
     margin-left: (-1 * $gutter-width / 2);
     margin-right: (-1 * $gutter-width / 2);
 }
+
+.flex-grid-halves {
+    display: flex;
+    flex-direction: row;
+    border-top: $main-line;
+    border-bottom: $main-line;
+    &__item {
+        width: 50%;
+        border-right: $main-line;
+        padding: 80px;
+    }
+    &__item:last-child {
+        border-right: transparent;
+    }
+}

@@ -1,0 +1,16 @@
+.box-escuela {
+    &__wrapper {
+        outline: $main-line;
+        padding: 30px;
+    }
+    &__category {
+        padding: 10px 0;
+        display: block;
+        text-decoration: none;
+        font-family: $secondary-text-font;
+    }
+    &__title {
+        color: $brand-color;
+        text-transform: none;
+    }
+}

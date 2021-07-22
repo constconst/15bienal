@@ -23,3 +23,21 @@
     color: $brand-color;
     border: $hover-main-line;
 }
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    &__text {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        font-family: $secondary-text-font;
+        font-size: 12px;
+    }
+    img {
+        width: 20px;
+        margin: 5px;
+    }
+}
