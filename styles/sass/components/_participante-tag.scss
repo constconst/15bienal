@@ -1,0 +1,19 @@
+.participante-tag {
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin: 5px 0;
+    a {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+    &__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+}

@@ -9769,6 +9769,15 @@ div.red-line {
   text-transform: none;
 }
 
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .box-obra {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9787,5 +9796,41 @@ div.red-line {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.box-obra__title {
+  font-size: 40px;
+  color: #F93110;
+  text-decoration: underline;
+}
+
+.participante-tag {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 5px 0;
+}
+
+.participante-tag a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+
+.participante-tag__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
