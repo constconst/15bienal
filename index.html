@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15ª Bienal</title>
     <link rel="stylesheet" href="styles/sass/main.css">
+
     <!-- Iconoir -->
     <link rel="stylesheet" href="https://raw.githubusercontent.com/lucaburgio/iconoir/master/fonts/iconoir.css">
 
@@ -19,7 +20,7 @@
             <!-- Este texto debe poder ser cambiado -->
             <span class="header__container-top__version">15ª versión</span>
             <!-- Ticker es un texto que va rotando, el texto debe poder ser cambiado en un cpt -->
-            <span class="header__container-top__ticker hide-on-small-only">WS TICKER QUE ESTÁ ROTANDO INFORMACIÓN. SE PONE LA LETRA ROJA AL ACTIVAR UN EVENTO EN VIVO. </span>
+            <span class="header__container-top__ticker is-hidden-mobile">WS TICKER QUE ESTÁ ROTANDO INFORMACIÓN. SE PONE LA LETRA ROJA AL ACTIVAR UN EVENTO EN VIVO. </span>
             <a href="" class="header__container-top__logo">
                 <p class="logo-text">
                     <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,6 +82,15 @@
                     <div class="col m6 offset-m2">
                         <span>Concierto</span>
                         <h2 class="carousel-item__title">PULSUS UMBRAE: FIAT 600 & ModiFICA</h2>
+                        <div class="d-flex">
+                            <span class="date">21 oct 2021</span>
+                            <div class="tools">
+                                <img src="assets/icons/source_icons_calendar.svg" alt="">
+                                <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                                <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                                <img src="assets/icons/source_icons_share-android.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div class="col m4">
                         <p class="">Música electrónica desarrollada e interpretada en vivo por F600 que interactúa con imágenes construidas y ejecutadas en sincronía con los sonidos por el artista visual Marcelo Fica y compuestas a partir de las piezas sonoras en
@@ -319,6 +329,7 @@
                         <div class="box-noticia__wrapper">
                             <a href="" class="box-noticia__category">Actividad</a>
                             <a href="" class="box-noticia__title">Cambio de horario para la presentación de Undergrodund Mines / Media City Film Festival</a>
+                            <span class="date">21 oct 2021</span>
                             <p class="box-noticia__excerpt">Habitasse quam nisi sagittis mi, non viverra nunc nisl iaculis quisque cursus tortor turpis tellus dui pharetra, massa, ullamcorper sit etiam sodales sollicitudin lorem vestibulum</p>
                         </div>
                     </div>
@@ -329,6 +340,7 @@
                         <div class="box-noticia__wrapper">
                             <a href="" class="box-noticia__category">Actividad</a>
                             <a href="" class="box-noticia__title">Cambio de horario para la presentación de Undergrodund Mines / Media City Film Festival</a>
+                            <div class="date">21 oct 2021</div>
                             <p class="box-noticia__excerpt">Habitasse quam nisi sagittis mi, non viverra nunc nisl iaculis quisque cursus tortor turpis tellus dui pharetra, massa, ullamcorper sit etiam sodales sollicitudin lorem vestibulum</p>
                         </div>
                     </div>
@@ -339,6 +351,7 @@
                         <div class="box-noticia__wrapper">
                             <a href="" class="box-noticia__category">Actividad</a>
                             <a href="" class="box-noticia__title">Cambio de horario para la presentación de Undergrodund Mines / Media City Film Festival</a>
+                            <div class="date">21 oct 2021</div>
                             <p class="box-noticia__excerpt">Habitasse quam nisi sagittis mi, non viverra nunc nisl iaculis quisque cursus tortor turpis tellus dui pharetra, massa, ullamcorper sit etiam sodales sollicitudin lorem vestibulum</p>
                         </div>
                     </div>
@@ -581,148 +594,117 @@
         <div class="container">
             <h4>Participantes</h4>
         </div>
-        <div class="section-grid__square-grid">
+        <div class="section-grid__square-grid participante">
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
-
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
-
                 </div>
             </div>
             <div class="square-grid-item">
-                <div class="square-grid-item__title">
-                    <div class="square-grid-item__title__flex">
-                        <p>01</p>
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="11.5" cy="11.5" r="11.5" fill="black"/>
-                        </svg>
+                <div class="participante__item">
+                    <a href="" class="participante__item__category">Campos Magnéticos</a>
+                    <img src="https://picsum.photos/300?random=45&grayscale" alt="" class="participante__item__img">
+                    <a href="" class="participante__item__name">Atsushi Tadokoro</a>
+                    <p class="participante__item__country">japón</p>
+                    <div class="tools">
+                        <img src="assets/icons/source_icons_calendar.svg" alt="">
+                        <span class="tools__text"><img src="assets/icons/source_icons_clock-outline.svg" alt=""> 8 min.</span>
+                        <img src="assets/icons/source_icons_sound-high.svg" alt="">
+                        <img src="assets/icons/source_icons_share-android.svg" alt="">
                     </div>
-                    <h5>museos</h5>
-                    <div class="red-line"></div>
-                    <p>El programa expositivo es acogido en el Museo Nacional de Bellas Artes (MNBA) y el Museo de Arte Contemporáneo (MAC).</p>
-                    <a href=""><svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 1L36.35 8M36.35 8L29 15M36.35 8H0" stroke="black"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>

@@ -1,10 +1,8 @@
 .hero {
     // Tamaños desktop porque no tengo el diseño del mobile
     padding-top: calc(83px + 17px);
-    height: 100vh;
-    margin-bottom: 100px;
-    & .carousel {
-        height: 100vh;
+    &__carousel {
+        height: 100vh !important;
         border-bottom: $main-line;
     }
 }

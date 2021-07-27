@@ -2,6 +2,10 @@
  * Basic typography style for copy text
  */
 
+html {
+    line-height: 1.5;
+}
+
 body {
     color: $text-color;
 }

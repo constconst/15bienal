@@ -4,8 +4,8 @@
 'abstracts/functions',
 'abstracts/mixins';
 // 2. Vendors
-@import 'vendors/normalize',
-'vendors/materialize/materialize.scss';
+@import 'vendors/materialize/materialize.scss',
+'vendors/normalize';
 // 3. Base stuff
 @import 'base/base',
 'base/fonts',
@@ -28,9 +28,9 @@
 'components/box-juandowney',
 'components/box-noticia',
 'components/box-obra',
+'components/box-participante',
 'components/participante-tag',
-'components/tools',
-'components/box-participante';
+'components/tools';
 // 6. Page-specific styles
 @import 'pages/home';
 // 7. Themes

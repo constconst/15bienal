@@ -1,0 +1,32 @@
+// Tools: son los svg de calendario, duración, audio y compartir
+.tools {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    &__text {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        font-family: $secondary-text-font;
+        font-size: 12px;
+    }
+    img {
+        width: 20px;
+        margin: 5px;
+    }
+}
+
+// Espacio con la fecha
+.date {
+    width: max-content;
+    max-width: 125px;
+    background-color: $lightest-color;
+    font-family: $secondary-text-font;
+    font-size: 14px;
+    padding: 5px 15px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-align: center;
+}

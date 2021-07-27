@@ -1,0 +1,28 @@
+.participante {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.participante__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__category {
+        text-decoration: none;
+        color: $brand-color;
+    }
+    &__img {
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+    }
+    &__name {
+        text-transform: none;
+    }
+    &__country {
+        text-transform: uppercase;
+    }
+}
