@@ -1,0 +1,121 @@
+// styling of hamburger menu
+.hamburger-menu {
+    display: inline-block;
+    height: 100px;
+    padding: 35px 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+    }
+    @media #{$medium-and-up} {
+        height: initial;
+    }
+    &__wrapper {
+        border: $main-line;
+        padding: 14px 12px;
+        border-radius: 50%;
+        @media #{$medium-and-up} {
+            padding: 0;
+            border-radius: 0;
+            border: transparent;
+        }
+        .menu-item {
+            background: black;
+            display: block;
+            height: 2px;
+            transition: all 0.3s ease-in-out;
+            width: 17px;
+            @media #{$medium-and-up} {
+                width: 30px;
+                height: 3px;
+            }
+            &:first-child {
+                margin: 0 0 3px;
+                @media #{$medium-and-up} {
+                    margin: 0 0 5px;
+                }
+            }
+            &:nth-child(2) {
+                margin: 0 0 3px;
+                @media #{$medium-and-up} {
+                    margin: 0 0 5px;
+                }
+            }
+            &:nth-child(3) {
+                @media #{$medium-and-up} {
+                    margin: 0 0 5px;
+                }
+            }
+        }
+        &.open {
+            .menu-item {
+                margin: 0 0 5px;
+                &:first-child {
+                    transform: rotate(45deg);
+                    transform-origin: 10px;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    transform-origin: 8px;
+                }
+            }
+        }
+    }
+}
+
+// Sobreescribir estilos del nav de materialize.
+nav {
+    background-color: $background-color;
+    color: $text-color;
+    height: 0;
+}
+
+// nav styles
+.mobile-nav-wrap {
+    @media (min-width: 768px) {
+        /* display: none; */
+    }
+}
+
+// styling of dropdown menu
+.mobile-header-nav {
+    z-index: 3;
+    background-color: $background-color;
+    height: 100vh;
+    overflow-y: hidden;
+    position: absolute;
+    display: none; // hide until menu is clicked
+    list-style: none; // replace with %styled-list
+    margin: 0; // replace with %styled-list
+    padding: 0; // replace with %styled-list
+    top: calc(83px + 21px); // if nav sliding in below header
+    width: 100%;
+    li {
+        border-bottom: $main-line;
+        padding: 26px $spacer 30px;
+        @media #{$medium-and-up} {
+            width: 95%;
+            margin: 0 auto;
+        }
+        a {
+            color: $text-color;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &__info {
+        font-size: 12px;
+    }
+    &__title {
+        font-family: $display-font;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        text-transform: initial;
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+}

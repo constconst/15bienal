@@ -2,19 +2,25 @@
     margin: 0 auto;
     max-width: 1340px;
     width: 95%;
+    padding: 0 $spacer;
 }
 
 @media #{$medium-and-up} {
     .container {
-        width: 100%;
+        width: 95%;
+        padding: 0 $spacer;
     }
 }
 
 @media #{$large-and-up} {
     .container {
-        width: 100%;
-        padding: 0;
+        width: 95%;
+        padding: 0 $spacer;
     }
+}
+
+.container-full {
+    width: 100vw;
 }
 
 .col .row {
@@ -22,6 +28,7 @@
     margin-right: (-1 * $gutter-width / 2);
 }
 
+// Flex grid mitades
 .flex-grid-halves {
     display: flex;
     flex-direction: row;

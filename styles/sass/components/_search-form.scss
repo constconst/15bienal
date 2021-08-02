@@ -1,14 +1,19 @@
 .search-form {
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
+    border: $main-line;
+    align-items: center;
+    margin: 0 60px;
+    padding: 0 20px;
     height: 40px;
-    width: 300px;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     & input[type=text] {
         border-bottom: 0;
         width: auto;
+        margin: 0;
+        &:focus {
+            border-bottom: 0px solid transparent !important;
+            box-shadow: 0 0px 0 0 transparent !important;
+        }
     }
 }
