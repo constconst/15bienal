@@ -82,33 +82,63 @@ nav {
     overflow-y: hidden;
     position: absolute;
     display: none; // hide until menu is clicked
-    list-style: none; // replace with %styled-list
     margin: 0; // replace with %styled-list
     padding: 0; // replace with %styled-list
-    top: calc(83px + 21px); // if nav sliding in below header
+    top: calc(83px + 23px); // if nav sliding in below header
     width: 100%;
+    @media #{$medium-and-up} {
+        height: auto;
+        top: calc(100px + 23px); // if nav sliding in below header
+    }
     &__grid {
         @media #{$medium-and-up} {
             display: flex;
             flex-wrap: wrap;
+            max-width: 95%;
+            margin: 0 auto;
         }
         &__item {
             @media #{$medium-and-up} {
                 width: 50%;
             }
         }
+        &__info {
+            padding: $spacer;
+            @media #{$medium-and-up} {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+            }
+            a {
+                font-family: $text-font;
+                padding-right: 40px;
+            }
+        }
     }
     li {
         border-bottom: $main-line;
-        padding: 26px $spacer 30px;
+        padding: 20px $spacer 20px;
+        @media #{$medium-and-up} {
+            padding: 30px $spacer 30px;
+        }
         a {
             color: $text-color;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
         }
     }
+    li:nth-child(odd) {
+        @media #{$medium-and-up} {
+            border-right: $main-line;
+        }
+    }
     &__info {
-        font-size: 12px;
+        font-size: 9px;
+        font-family: $secondary-text-font;
+        @media #{$medium-and-up} {
+            font-size: 12px;
+        }
     }
     &__title {
         font-family: $display-font;
