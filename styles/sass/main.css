@@ -9559,8 +9559,7 @@ body {
 }
 
 .header__container-top__logo {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  text-align: right;
 }
 
 .header__container-bottom {
@@ -9842,6 +9841,7 @@ body {
 .carousel-item__description {
   -webkit-transform: translateY(30vh);
           transform: translateY(30vh);
+  font-size: 1.25rem;
 }
 
 .section-grid {
