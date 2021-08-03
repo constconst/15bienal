@@ -1,0 +1,44 @@
+.section-title {
+    &__main {
+        &__title {
+            font-size: 2rem;
+            @media #{$medium-and-up} {
+                font-size: $font-large;
+            }
+        }
+    }
+}
+
+.participante-tag-large {
+    display: flex;
+    margin-bottom: 20px;
+    @media #{$medium-and-up} {
+        margin-bottom: 40px;
+    }
+    &__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @media #{$medium-and-up} {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__description {
+        margin-left: 10px;
+        @media #{$medium-and-up} {
+            margin-left: 20px;
+        }
+        p {
+            max-width: 315px;
+            margin: 0;
+            font-size: 14px;
+            @media #{$medium-and-up} {
+                max-width: 500px;
+            }
+        }
+        &__info {
+            color: $mid-grey;
+        }
+    }
+}
