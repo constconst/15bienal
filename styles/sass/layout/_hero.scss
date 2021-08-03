@@ -23,6 +23,7 @@
 
 .carousel-item {
     &__category {
+        font-size: 20px;
         text-transform: lowercase;
         margin: 0;
         padding-top: 80px;
@@ -38,5 +39,19 @@
             font-size: $font-large;
             line-height: 1.5;
         }
+    }
+    &__user {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        @media #{$medium-and-up} {
+            flex-direction: row;
+        }
+        .participante-tag {
+            padding-right: $spacer;
+        }
+    }
+    &__description {
+        transform: translateY(30vh);
     }
 }
