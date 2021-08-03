@@ -74,12 +74,6 @@ nav {
 }
 
 // nav styles
-.mobile-nav-wrap {
-    @media (min-width: 768px) {
-        /* display: none; */
-    }
-}
-
 // styling of dropdown menu
 .mobile-header-nav {
     z-index: 3;
@@ -93,13 +87,20 @@ nav {
     padding: 0; // replace with %styled-list
     top: calc(83px + 21px); // if nav sliding in below header
     width: 100%;
+    &__grid {
+        @media #{$medium-and-up} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            @media #{$medium-and-up} {
+                width: 50%;
+            }
+        }
+    }
     li {
         border-bottom: $main-line;
         padding: 26px $spacer 30px;
-        @media #{$medium-and-up} {
-            width: 95%;
-            margin: 0 auto;
-        }
         a {
             color: $text-color;
             text-decoration: none;
