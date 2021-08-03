@@ -10,17 +10,33 @@
 .hero__fixed-item {
     z-index: -2;
     &__img {
-        max-width: 552px;
+        max-width: 287px;
         height: auto;
-        transform: translateX(-80px);
         margin-top: 10px;
+        transform: translateX(100px);
+        @media #{$medium-and-up} {
+            max-width: 552px;
+            transform: translateX(-80px);
+        }
     }
 }
 
 .carousel-item {
+    &__category {
+        text-transform: lowercase;
+        margin: 0;
+        padding-top: 80px;
+    }
     &__title {
-        font-size: $font-large;
-        line-height: 1.5;
-        text-decoration: underline solid black 4px;
+        margin-top: 0;
+        font-size: 32px;
+        text-transform: lowercase;
+        line-height: 1.2;
+        text-decoration: underline solid black 2px;
+        @media #{$medium-and-up} {
+            text-transform: initial;
+            font-size: $font-large;
+            line-height: 1.5;
+        }
     }
 }

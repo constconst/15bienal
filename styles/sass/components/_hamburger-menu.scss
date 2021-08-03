@@ -104,6 +104,7 @@ nav {
         }
         &__info {
             padding: $spacer;
+            display: block;
             @media #{$medium-and-up} {
                 height: 100px;
                 display: flex;
@@ -112,7 +113,9 @@ nav {
             }
             a {
                 font-family: $text-font;
-                padding-right: 40px;
+                @media #{$medium-and-up} {
+                    padding-right: 40px;
+                }
             }
         }
     }
