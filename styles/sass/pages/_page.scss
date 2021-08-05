@@ -1,5 +1,13 @@
 .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     &__main {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
         &__title {
             font-size: 2rem;
             @media #{$medium-and-up} {
@@ -11,6 +19,7 @@
 
 .participante-tag-large {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
     @media #{$medium-and-up} {
         margin-bottom: 40px;
@@ -34,11 +43,25 @@
             margin: 0;
             font-size: 14px;
             @media #{$medium-and-up} {
-                max-width: 500px;
+                width: 600px;
             }
         }
         &__info {
             color: $mid-grey;
+        }
+    }
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &__text {
+        p {
+            font-size: 16px;
+            @media #{$large-and-up} {
+                width: 700px;
+            }
         }
     }
 }
