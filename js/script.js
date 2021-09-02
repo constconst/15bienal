@@ -2,8 +2,10 @@ $(function() {
     // Carousel
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
-        indicators: true
+        indicators: false,
+        height: 800,
     });
+
     // Hidden nav
     var prev = 0;
     var $window = $(window);
@@ -21,4 +23,7 @@ $(function() {
         $('.mobile-header-nav').slideToggle();
         $(this).toggleClass('open');
     });
+
+
+
 });

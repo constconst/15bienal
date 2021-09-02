@@ -36,6 +36,9 @@
             align-items: initial;
         }
         &__left {
+            h1 {
+                margin: 0;
+            }
             @media #{$medium-and-up} {
                 display: flex;
                 align-items: baseline;
@@ -52,9 +55,13 @@
                 align-items: center;
             }
         }
-        & h1 {
+        & h1 a {
+            text-decoration: none;
+            text-transform: initial;
+            letter-spacing: 0;
             font-size: 36px;
             margin: 0;
+            font-family: $display-font;
             color: $brand-color;
             @media #{$medium-and-up} {
                 font-size: 64px;

@@ -1,37 +1,87 @@
 .section-grid {
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin: 70px auto;
     &__square-grid {
-        display: flex;
-        flex-wrap: wrap;
-        border-top: $main-line;
-        border-bottom: $main-line;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+        @media #{$medium-and-up} {
+            grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+            outline: none;
+            margin: 70px 0;
+        }
+        @media #{$large-and-up} {
+            outline: none;
+            margin: 70px 0;
+        }
+        &>* {
+            outline: $main-line;
+            margin-left: 1px;
+            margin-bottom: 1px;
+        }
     }
-    &__square-grid>* {
-        flex: 1;
-        min-height: 300px;
-        width: 25%;
-        min-width: 25%;
-        box-shadow: 1px 1px 0 $text-color;
+}
+
+.square-grid-item {
+    @media #{$medium-and-up} {
+        padding: 10px;
     }
-    & .square-grid-item {
-        padding: 20px;
-        &__title {
-            &__flex {
-                display: flex;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        padding: 30px 15px 0 15px;
+        &__flex {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            @media #{$large-and-up} {
+                flex-direction: row;
                 justify-content: space-between;
-                align-content: center;
                 align-items: center;
             }
-            h5 {
-                color: $brand-color;
+            p {
+                margin: 0;
+                align-self: flex-start;
+                font-family: $display-font;
+                padding-top: 30px;
+                @media #{$medium-and-up} {
+                    padding-top: 0;
+                }
             }
         }
     }
 }
 
+.square-grid-item__body {
+    &__excerpt {
+        display: none;
+        @media #{$large-and-up} {
+            display: block;
+        }
+    }
+    &__link {
+        display: none;
+        @media #{$large-and-up} {
+            display: block;
+            float: right;
+            padding-top: 50px;
+        }
+    }
+    & h4 {
+        margin: 0;
+        color: $brand-color;
+        padding-bottom: 16px;
+    }
+}
+
 div.red-line {
+    display: none;
     height: 2px;
     width: 15px;
     background-color: $brand-color;
+    @media #{$large-and-up} {
+        display: block;
+        margin-bottom: 57px;
+    }
 }

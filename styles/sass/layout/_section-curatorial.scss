@@ -3,13 +3,24 @@
     padding: 5% 0;
     &__text {
         color: $brand-color;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 145%;
         text-align: center;
+        @media #{$medium-and-up} {
+            font-size: 24px;
+        }
     }
     &__link {
         text-align: center;
         display: block;
-        margin-top: 40px;
+        margin-top: 10px;
+        font-size: 12px;
+        @media #{$medium-and-up} {
+            font-size: inherit;
+            margin-top: 40px;
+        }
+        svg {
+            padding-left: 10px;
+        }
     }
 }
