@@ -19,18 +19,20 @@
 'layout/section-curatorial',
 'layout/section-noticiero',
 'layout/section-downey',
-'layout/footer';
+'layout/footer',
+'layout/section-newsletter';
 // 5. Components
 @import 'components/button',
 'components/hamburger-menu',
 'components/search-form',
-'components/box-activity',
+'components/box-actividad',
 'components/box-escuela',
 'components/box-juandowney',
 'components/box-noticia',
 'components/box-obra',
 'components/box-participante',
 'components/participante-tag',
+'components/box-campos',
 'components/tools';
 // 6. Page-specific styles
 @import 'pages/home',

@@ -2,20 +2,34 @@
     &__container {
         border-top: $main-line;
         border-bottom: $main-line;
+        @media #{$medium-and-up} {
+            overflow: initial;
+        }
         padding-top: 40px;
         padding-bottom: 80px;
     }
-    &__image {
-        position: relative;
-        margin-bottom: 40px;
-        &__rectangle {
-            outline: $main-line;
-            width: 727px;
-            height: 374px;
-            position: absolute;
-            top: 15px;
-            left: 20px;
-            z-index: -1;
+    &__info {
+        @media #{$medium-and-up} {
+            display: block;
+            padding-left: 40px!important;
         }
+    }
+}
+
+.section-downey__image {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    & img {
+        max-width: 100%;
+    }
+    &__rectangle {
+        outline: $main-line;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: -1;
     }
 }

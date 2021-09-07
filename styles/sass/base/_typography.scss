@@ -10,11 +10,10 @@ body {
     color: $text-color;
 }
 
-h4 {
-    font-size: $h4-mobile;
-    line-height: 1.45;
+h2 {
+    font-size: $h2-mobile;
     @media #{$large-and-up} {
-        font-size: $h4-desktop;
+        font-size: $h2-desktop;
     }
 }
 
@@ -22,5 +21,13 @@ h3 {
     font-size: $h3-mobile;
     @media #{$large-and-up} {
         font-size: $h3-desktop;
+    }
+}
+
+h4 {
+    font-size: $h4-mobile;
+    line-height: 1.45;
+    @media #{$large-and-up} {
+        font-size: $h4-desktop;
     }
 }

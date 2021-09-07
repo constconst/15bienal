@@ -55,8 +55,7 @@
 //     margin-bottom: 30px;
 // }
 .box-noticia-desktop {
-    width: 33.3%;
-    height: 100%;
+    margin: 0 10px;
     &__img {
         width: 100%;
         aspect-ratio: 3 / 2;
@@ -95,5 +94,9 @@
 }
 
 #noticiero-slider .carousel-item {
-    height: 800px;
+    height: 700px;
+}
+
+.glider-slide {
+    min-height: 700px!important;
 }

@@ -1,7 +1,29 @@
 .box-escuela {
+    @media #{$medium-and-up} {
+        display: flex;
+    }
     &__wrapper {
         outline: $main-line;
         padding: 30px;
+        margin-bottom: 20px;
+        @media #{$medium-and-up} {
+            margin-right: 20px;
+            width: 32%;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &__info {
+            @media #{$large-and-up} {
+                display: flex;
+            }
+        }
+    }
+    &__excerpt {
+        display: none;
+        @media #{$large-and-up} {
+            display: block;
+        }
     }
     &__category {
         padding: 10px 0;
@@ -10,7 +32,19 @@
         font-family: $secondary-text-font;
     }
     &__title {
+        display: block;
         color: $brand-color;
         text-transform: none;
+        font-size: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        @media #{$large-and-up} {
+            font-size: 32px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
     }
 }

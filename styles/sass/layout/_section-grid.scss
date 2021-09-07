@@ -30,6 +30,10 @@
     flex-direction: column;
     &__title {
         padding: 30px 15px 0 15px;
+        hyphens: auto;
+        @media #{$large-and-up} {
+            hyphens: none;
+        }
         &__flex {
             display: flex;
             flex-direction: column-reverse;
